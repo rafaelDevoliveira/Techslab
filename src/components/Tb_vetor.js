@@ -24,9 +24,9 @@ export default function Tb_vetor() {
       <tbody>
         {result.map((number) => {
           return (
-            <td key={number}>
-              <tr>{number}</tr>
-            </td>
+            <th key={number}>
+              <td>{number}</td>
+            </th>
           );
         })}
       </tbody>

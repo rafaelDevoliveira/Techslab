@@ -8,7 +8,7 @@ export default function Calculadora() {
 
   const calculo = () => {
     if (operação === "+") setResult(Number(numero1) + Number(numero2));
-    if (operação === "-") setResult(Number(numero1)- Number(numero2));
+    if (operação === "-") setResult(Number(numero1) - Number(numero2));
     if (operação === "/") setResult(Number(numero1) / Number(numero2));
     if (operação === "*") setResult(Number(numero1) * Number(numero2));
   };
@@ -18,40 +18,29 @@ export default function Calculadora() {
   return (
     <div>
       <label>
-        Digite primeiro valor:
         <input
+          placeholder="Digite primeiro valor:"
           type="number"
           onChange={(event) => setNumero1(event.target.value)}
         />
       </label>
       <label>
-        Digite segundo valor:
         <input
+          placeholder="Digite o segundo valor"
           type="number"
           onChange={(event) => setNumero2(event.target.value)}
         />
       </label>
       <label>
-        Escolha a operação
+        Operação
         <select onChange={(event) => setOperação(event.target.value)}>
-          <option>
-            +
-          </option>
-          <option>
-            -
-          </option>
-          <option>
-            /
-          </option>
-          <option>
-            *
-          </option>
+          <option>+</option>
+          <option>-</option>
+          <option>/</option>
+          <option>*</option>
         </select>
       </label>
-      <button 
-        type="button"
-        onClick={calculo}
-      >
+      <button type="button" onClick={calculo}>
         Calcular
       </button>
       <div>O Calculo da operação é :{resul}</div>

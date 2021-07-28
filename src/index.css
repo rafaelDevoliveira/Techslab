@@ -1,14 +1,14 @@
 *{
-  background-color: rgb(146, 143, 143);
+  
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-.table, th{
+.table, th {
   border: 1px solid black;
   border-collapse: collapse;
 }
 .App{
-  text-align: center;
+  text-align: center;  
   color: rgba(43, 40, 40, 0.774);
 }
 ul {
