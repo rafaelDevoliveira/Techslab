@@ -18,21 +18,21 @@ export default function Calculadora() {
   return (
     <div>
       <label>
-        digite primeiro valor:
+        Digite primeiro valor:
         <input
           type="number"
           onChange={(event) => setNumero1(event.target.value)}
         />
       </label>
       <label>
-        digite segundo valor:
+        Digite segundo valor:
         <input
           type="number"
           onChange={(event) => setNumero2(event.target.value)}
         />
       </label>
       <label>
-        escolha a operação
+        Escolha a operação
         <select onChange={(event) => setOperação(event.target.value)}>
           <option>
             +

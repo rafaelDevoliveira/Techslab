@@ -10,7 +10,7 @@ export default function Tb_vetor() {
       <thead>
         <tr>
           <th>Um</th>
-          <th>hois</th>
+          <th>Dois</th>
           <th>Tres</th>
           <th>Quatro</th>
           <th>Cinco</th>
@@ -18,7 +18,7 @@ export default function Tb_vetor() {
           <th>Sete</th>
           <th>Oito</th>
           <th>Nove</th>
-          <th>hez</th>
+          <th>Dez</th>
         </tr>
       </thead>
       <tbody>
