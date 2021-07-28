@@ -1,24 +1,37 @@
-import React from 'react'
+import React, { useState } from "react";
 
 export default function FizBuzz() {
+  const [numero, setNumero] = useState("");
+  const [resultado, setResultado]= useState();
 
-  function fiz(numero){
-    if(numero > 100 || numero < 1){
-      return 'numero inválido'
+  function fiz() {
+    if (numero > 100 || numero < 1) {
+      setResultado("numero inválido");
     }
-    if(numero % 5 ===0 && numero %3 ===0 ){
-      return 'fizz-buzz'
-    } else if( numero %3 ===0 ){
-      return 'fizz'
-    } else if( numero %5 ===0){
-      return 'buzz'
-    }
-    return numero
+    if (numero % 5 === 0 && numero % 3 === 0) {
+      setResultado("fizz-buzz");
+    } else if (numero % 3 === 0) {
+      setResultado("fizz");
+    } else if (numero % 5 === 0) {
+      setResultado("buzz");
+    }    
   }
 
   return (
     <div>
-      <h2>{fiz(101)}</h2>      
+      <input
+        type="number"
+        onChange={(event) => setNumero(event.target.value)}
+        placeholder="Digite um numero"
+      ></input>
+      <button 
+        type="button"
+        onClick={fiz}
+      >
+        Verificar
+      </button>
+
+      <h2>O numero é : {resultado}</h2>
     </div>
-  )
+  );
 }
