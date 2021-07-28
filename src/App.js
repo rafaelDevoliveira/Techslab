@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Tbvetor from "./components/Tb_vetor";
+import Calculador from "./components/Calculador"
+import Age from "./components/Age";
+import FizBuzz from "./components/FizBuzz";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Techslab</h2>
+      <Tbvetor />
+      <Calculador />
+      <Age />
+      <FizBuzz />
     </div>
   );
 }
